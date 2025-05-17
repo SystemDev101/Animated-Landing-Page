@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PandaWorldClothing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: black;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background: radial-gradient(rgb(255, 255, 255),rgb(0, 0, 0));
+            padding: 20px 0;
+            text-align: left;
+            justify-items: left;
+        }
+
+        nav p {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bolder;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            padding-right: 40px;
+            text-align: center;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            color: #5e5e5e;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+        .back-button {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #08002e;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 2rem 0;
+        transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+        background-color: #1900ff;
+        }
+
+        footer {
+            background: #03011d;
+            color: #8a8a8a;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 15px;
+            }
+
+            .contact-info {
+                padding-right: 0;
+            }
+
+            nav {
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            nav a {
+                margin: 0 10px;
+                padding: 5px 15px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Contact Us</p>
+    </nav>
+
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h1>Contact Information</h1>
+                <p>📞 Phone: +27 61 523 1885</p>
+                <p>📧 Email: pandaworldclothin@gmail.com</p>
+                <p>📍 Address: Stand 325 Hwelereng, Limpopo, South Africa</p>
+            </div>
+            <div class="back-button-container" style="text-align: center;">
+                <a href="index.html" class="back-button">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 PandaWorldClothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

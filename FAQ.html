@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda World Clothing - FAQs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: black;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-container {
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+        }
+
+        .faq-question.active::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: white;
+        }
+
+        .faq-answer.show {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #1a252f;
+        }
+        .footer{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">Q1: How long does it take to receive my refund?</div>
+            <div class="faq-answer">
+                <p>Once we receive and inspect your returned item(s), refunds are processed within 3–5 business days.
+                    The timing for the refund to reflect in your account depends on your bank/payment provider
+                    (typically 5–10 business days).</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q2: What if my item arrives damaged or defective?</div>
+            <div class="faq-answer">
+                <p>Contact us immediately at <a
+                        href="mailto:pandaworldclothin@gmail.com">pandaworldclothin@gmail.com</a> with photos of the
+                    damaged item and your order number. We'll either send a replacement or issue a full refund—no return
+                    needed!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q3: Can I return an item without contacting you first?</div>
+            <div class="faq-answer">
+                <p>No. You must email or call us to initiate the return process. Unauthorized returns (sent without
+                    approval) will not be refunded.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q4: Do you offer exchanges?</div>
+            <div class="faq-answer">
+                <p>We currently don't offer direct exchanges. To swap an item, return the original purchase for a refund
+                    and place a new order on our website.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q5: What counts as "original condition"?</div>
+            <div class="faq-answer">
+                <p>Items must be unworn, unwashed, and free of stains, odors, or damage, with all tags and packaging
+                    intact.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q6: Can I return sale or discounted items?</div>
+            <div class="faq-answer">
+                <p>Only full-priced items are eligible for returns. Final sale items (e.g., clearance) cannot be
+                    returned.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q7: What if I miss the 7-day return window?</div>
+            <div class="faq-answer">
+                <p>Unfortunately, we strictly enforce the 7-day policy. Late requests will not qualify for a refund or
+                    exchange.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q8: How do I track my return?</div>
+            <div class="faq-answer">
+                <p>Use the tracking number provided on your prepaid shipping label. Contact us if you don't receive
+                    confirmation within 5 business days of shipping.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q9: What proof of purchase do I need?</div>
+            <div class="faq-answer">
+                <p>Provide your order number (e.g., #PW1234) or the invoice emailed to you after purchase.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q10: Does the 7-day window start from the purchase date or delivery date?</div>
+            <div class="faq-answer">
+                <p>It starts from the purchase date (the day you placed your order).</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <footer class="footer">
+        <p>&copy; 2025 Panda World Clothing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.contains('active');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    if (q !== question) {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('show');
+                    }
+                });
+
+                // Toggle current answer
+                question.classList.toggle('active');
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

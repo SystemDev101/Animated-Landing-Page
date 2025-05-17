@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda World Clothing - Return Policy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            background-color: #131313;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .policy-header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .policy-header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .policy-section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .policy-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .section-header h2 {
+            color: #1f008f;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .section-header .toggle-icon {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+            transition: transform 0.3s;
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.3s ease;
+        }
+
+        .section-content.show {
+            max-height: 1000px;
+            padding-top: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        li:before {
+            content: "→";
+            color: #0e00cf;
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight {
+            background-color: #fff9e6;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background-color: #f8f4ff;
+            border-left: 4px solid #0a0096;
+            padding: 20px;
+            margin-top: 30px;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 30px;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #4322ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .effective-date {
+            text-align: right;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+
+        .footer{
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .panda-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="policy-header">
+        <div class="panda-icon">🐼</div>
+        <h1>Panda World Clothing Return Policy</h1>
+        <p>We want you to love your purchase. If you're not satisfied, here's how we can help.</p>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>1. Return Window</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <ul>
+                <li>Returns must be requested within <span class="highlight">7 calendar days</span> of your purchase
+                    date.</li>
+                <li>Claims submitted after <span class="highlight">23:59 (South African Standard Time)</span> on day 7
+                    will not be accepted.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>2. Eligibility Criteria</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <p>To qualify for a return:</p>
+            <ul>
+                <li>Items must be <span class="highlight">unworn, unaltered, and in original condition</span> (tags
+                    attached, no stains/damage).</li>
+                <li><span class="highlight">Proof of purchase</span> (order number/invoice) is required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>3. How to Initiate a Return</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <p>Contact us <span class="highlight">within 7 days</span> via:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:pandaworldclothin@gmail.com">pandaworldclothin@gmail.com</a>
+                    <ul>
+                        <li>Include:
+                            <ul>
+                                <li>Order number</li>
+                                <li>Reason for return</li>
+                                <li>Photos of the item(s) (if requested)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Call:</strong> +27 61 523 1885 (Mon–Fri, 9 AM–5 PM SAST)</li>
+            </ul>
+            <p><span class="highlight">Do not ship items back without approval.</span> We'll guide you through the
+                process once your claim is verified.</p>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>4. Return Shipping</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <ul>
+                <li>We cover return shipping costs! After approval, we'll email you a <span class="highlight">prepaid
+                        shipping label</span>.</li>
+                <li>Returns sent without using our label will not be refunded for shipping fees.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>5. Processing Time</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <ul>
+                <li>Allow <span class="highlight">3–5 business days</span> for us to process your return after we
+                    receive the item(s).</li>
+                <li>Refunds will be issued to your <span class="highlight">original payment method</span>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header" onclick="toggleSection(this)">
+            <h2>6. Exceptions</h2>
+            <div class="toggle-icon">+</div>
+        </div>
+        <div class="section-content">
+            <ul>
+                <li><span class="highlight">Final sale items</span> (e.g., clearance/products marked "non-returnable")
+                    cannot be returned.</li>
+                <li>Returns that don't meet eligibility criteria will be rejected or sent back at your cost.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Questions? Reach out:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:pandaworldclothin@gmail.com">pandaworldclothin@gmail.com</a>
+            </li>
+            <li><strong>Phone:</strong> +27 61 523 1885</li>
+        </ul>
+    </div>
+
+    <div class="effective-date">
+        Policy Effective Date: September 2025
+    </div>
+
+    <center>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </center>
+
+    <footer class="footer">
+        <p>&copy; 2025 Panda World Clothing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initially show all sections
+        document.querySelectorAll('.section-content').forEach(content => {
+            content.classList.add('show');
+            content.previousElementSibling.querySelector('.toggle-icon').textContent = '-';
+        });
+
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+
+            content.classList.toggle('show');
+            icon.textContent = content.classList.contains('show') ? '-' : '+';
+        }
+
+        // Add animation to sections when they come into view
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.policy-section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
